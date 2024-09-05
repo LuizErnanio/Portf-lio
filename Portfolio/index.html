@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icons8-xbox-l-16.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  
+
+    <title>Portfólio Luiz Ernânio</title>
+</head>
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="btn-contato">
+                <a href="https://www.linkedin.com/in/luiz-ernanio-martins-719557169" target="_blank"><img src="./assets/linkedin.png" alt=""></a>
+                <a href="https://github.com/LuizErnanio" target="_blank"><img src="./assets/github.png" alt=""></a>
+            </div>
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#home-id">Home</a></li>
+                    <li><a href="#sobre-id">Sobre mim</a></li>
+                    <li><a href="#projetos-id">Projetos</a></li>
+                </ul>
+            </nav><!--menu-desktop-->
+
+            <div class="btn-abir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                    <div class="btn-fechar">
+                        <i class="bi bi-x-lg"></i>
+                    </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#home-id">Home</a></li>
+                        <li><a href="#sobre-id">Sobre mim</a></li>
+                        <li><a href="#projetos-id">Projetos</a></li>
+                    </ul>
+            </nav>
+            </div><!--menu-mobile-->
+
+            <div class="overlay-mobile" id="overlay-mobile"></div>
+
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo-do-site" id="home-id">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Olá, Sou o Luiz Ernânio</h1>
+                        <p>Desenvolvedor Front End.</p>
+                        <ul class="tecnologias">                            
+                            <li class="icon-css"><img src="./assets/icons8-css-50.png" alt="icone css"></li>
+                            <li class="icon-html"><img src="./assets/icons8-html5-50.png" alt="icone html5"></li>
+                            <li class="icon-js"><img src="./assets/icons8-js-50.png" alt="icone js"></li>
+                        </ul>
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="./assets/logo.luiz.png" alt="imagem do Luiz Ernânio">
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section class="sobre-mim" id="sobre-id">
+                <div class="flex">                    
+                    <div class="img-sobre">
+                        <img src="./assets/foto-lateral.jpg" alt="Luiz Ernanio">
+                    </div><!--img-sobre-->
+                    <div class="txt-sobre">                        
+                    <h2>MUITO PRAZER, <span>SOU LUIZ ERNÂNIO.</span> </h2>          
+                             <p>Desde 2014, a tecnologia e seu design têm sido minha paixão.
+                             Fiz um curso de Designer Gráfico em uma escola da minha comunidade. Depois disso,
+                              trabalhei em diferentes empregos por um tempo.</p>
+                             <p>Em 2021, decidi dar um passo corajoso e mudei para outra cidade.
+                             Lá, comecei a trabalhar em uma empresa de telecomunicações,
+                             focando na área de projetos. Tenho experiência de quatro anos na criação de projetos de telecomunicações.</p>
+                             <p>Gosto de trabalhar em equipe e sei lidar com tarefas administrativas e de escritório.
+                             Atualmente, estou estudando Análise e Desenvolvimento de Sistemas na Faculdade Estácio de Sá, com previsão de conclusão em julho de 2024.
+                             Estou animado para ver o que o futuro reserva e pronto para enfrentar novos desafios."</p>
+                    </div><!--txt-sobre-->  
+                </div><!--flex-->
+        </section><!--sobre-mim-->
+
+        <section class="projetos" id="projetos-id">
+            <div class="interface">
+                <h2>MEUS PROJETOS.</h2>
+                <div class="flex">
+                    <div class="img-proj" style="background-image: url(./assets/Desktop\ _\ 1440.png);">
+                        <div class="overlay">Projeto 1</div>
+                    </div>
+                    <div class="img-proj" style="background-image: url(./assets/top\ 5\ manhwa\ 2021.png);">
+                        <div class="overlay">Projeto 2</div>
+                    </div>
+                    <div class="img-proj" style="background-image: url(./assets/Desktop\ -\ Home.png);">
+                        <div class="overlay">Projeto 3</div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--projetos-->
+
+    </main>
+
+    <footer></footer>
+
+    
+</body>
+<script src="./js/main.js"></script>
+</html>

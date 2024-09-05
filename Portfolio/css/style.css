@@ -1,0 +1,385 @@
+
+/* ESTILO GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #C7E8F6;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 100vw;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/* CABEÇALHO */
+
+header{
+    width: 100%;
+    position: fixed;
+    padding: 5px 4%;
+    background-color: rgb(152, 187, 252);
+    z-index: 99999;
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu-desktop ul li a{
+    width: 100px;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.menu-desktop a{
+    width: 100px;
+}
+
+header nav.menu-desktop a:hover{
+    color: rgb(68, 67, 71);
+    font-weight: 900;
+    transform: scale(1.15);
+}
+
+.interface .btn-contato a:hover{
+    color: rgb(68, 67, 71);
+    font-weight: 900;
+    transform: scale(1.15);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* ESTILO MENU MOBILE */
+
+.btn-abir-menu{
+    display: none;
+}
+
+.btn-abir-menu i{
+    color: black;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: rgb(97, 97, 189);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.abrir-menu-mobile{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu-mobile ~ .overlay-mobile{
+    display: block;
+}
+
+.menu-mobile nav a{
+    text-decoration: none;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    font-size: 35px;
+}
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 300;
+    padding: 30px 4%;
+    display: block;
+}
+
+.overlay-mobile{
+    background-color: rgba(0, 0, 0, 0.651);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;    
+}
+
+
+/* ESTILO DO TOPO */
+
+section.topo-do-site{
+    width: 100%;
+    padding: 17% 10%;
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px ;
+}
+.topo-do-site h1{
+    font-size: 30px;
+}
+.topo-do-site .txt-topo-site p{
+    margin: 20px 0;
+    font-weight: 600;
+    text-align: center;
+}
+.tecnologias{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px 4%;
+}
+.icon-html:hover{
+    color: rgb(68, 67, 71);
+    font-weight: 900;
+    transform: scale(1.25);
+    transition: .2s;
+}
+.icon-css:hover{
+    color: rgb(68, 67, 71);
+    font-weight: 900;
+    transform: scale(1.25);
+    transition: .2s;
+}
+.icon-js:hover{
+    color: rgb(68, 67, 71);
+    font-weight: 900;
+    transform: scale(1.25);
+    transition: .2s;
+}
+
+/* SOBRE MIM */
+
+section.sobre-mim{
+    width: 100%;
+    padding: 14% 15%;
+    background: #C7E8F6;
+}
+section.sobre-mim .flex{
+    align-items: center;
+    gap: 60px ;
+}
+section.sobre-mim img{
+    border-radius: 5px;
+}
+section.sobre-mim h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+section.sobre-mim span{
+    color: rgb(42, 42, 146);
+    display: block;
+}
+section.sobre-mim p{
+    margin: 20px 0;
+    text-align: justify;
+    font-weight: 600;
+}
+
+/* MEUS PROJETOS */
+
+section.projetos{
+    padding: 10% 12%;
+}
+
+section.projetos h2{
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+section.projetos .flex{
+    justify-content: space-around;
+}
+.img-proj{
+    width: 300px;
+    height: 360px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 30px;
+    position:relative;
+}
+.img-proj:hover{
+    background-position: 100% 100%;
+}
+.img-proj .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0e0e0eb6;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: .5s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1440px){
+    
+    section.sobre-mim{
+        padding: 10% 15%;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+    .projetos .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-proj {
+        margin: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    /* CABEÇALHO */
+
+    header > .interface{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+    .menu-desktop{
+        display: none;
+    }
+
+    .btn-contato{
+        justify-content: space-between;
+    }
+
+    
+.btn-abir-menu{
+    display:block
+}
+
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    .projetos .flex{
+        align-items: center;        
+    }
+    
+    .projetos .img-proj{
+        padding-bottom: 10%;
+    }
+
+    .img-proj {
+        width: 100%;
+        max-width: 360px;
+        margin: 10px 10px;
+        height: 460px;
+    }
+    section.sobre-mim h2{
+        font-size: 30px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+    .btn-abrir-menu{
+        display: block;
+    }
+}
+@media screen and (max-width: 320px){
+
+    /* CABEÇALHO */
+    .menu-desktop{
+        display: none;
+    }
+
+    .btn-contato{
+        width: 100%;
+        max-width: 50px;
+        justify-content: space-between;
+    }
+
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    .img-topo-site img{        
+        width: 90%;
+    }
+
+    .projetos{
+        justify-content: center;
+        padding: 10% 15%;
+    }
+    .txt-topo-site h1{
+        font-size: 20px;
+    }
+
+    section.sobre-mim h2{
+        font-size: 20px;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }    
+    section.sobre-mim img{
+        width: 100%;
+    }
+    
+    section.sobre-mim p{
+        margin: 10px 0;
+    }
+}
